@@ -47,7 +47,7 @@ main {
 }
 
 .intro {
-    background: url('../images/Notebook.jfif') no-repeat center center/cover;
+    background: url('images/Notebook.jfif') no-repeat center center/cover;
     padding: 5rem 1rem;
     color: #fff;
     display: flex;
@@ -147,98 +147,47 @@ main {
 }
 
 .ranking td {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #FF8F4F;
 }
 
-.ranking tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Courses section */
-.courses {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.course-img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.course-img:hover {
-    transform: scale(1.05);
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideInLeft {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0); }
+.ranking tr:hover {
+    background-color: #86BBD8;
+    cursor: pointer;
 }
 
 footer {
+    background-color: #333;
     padding: 2rem;
-    text-align: center;
     color: #fff;
-    font-family: Arial, sans-serif;
-}
-
-footer h2 {
-    font-size: 1.5em;
-    margin-bottom: 1rem;
 }
 
 footer p {
     margin: 0.5rem 0;
 }
 
-footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 1rem 0;
-    display: flex;
-    justify-content: center;
-}
-
-footer ul li {
-    margin: 0 1rem;
-}
-
-footer ul li a {
+footer a {
+    color: #FF8F4F;
     text-decoration: none;
-    padding: 10px;
-    border-radius: 50%;
-    color: white;
-    font-size: 1.2em;
-    display: inline-block;
-    transition: background-color 0.3s, transform 0.3s;
 }
 
-footer .redes-sociais{
-    background-color: #3b5998;
+footer a:hover {
+    text-decoration: underline;
 }
 
-footer .redes-sociais{
-    background-color: #1da1f2;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-footer .redes-sociais{
-    background-color: #e4405f;
-}
-
-footer .redes-sociais:hover {
-    opacity: 0.8;
-}
-
-footer p, footer h2 {
-    color: #fff;
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
