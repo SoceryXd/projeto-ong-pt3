@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #FF8F4F, #86BBD8 );
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    background-color: #86BBD8;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF8F4F;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 2rem;
+}
+
+.intro {
+    background: url('../images/Notebook.jfif') no-repeat center center/cover;
+    padding: 5rem 1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.intro img:hover {
+    transform: scale(1.05);
+}
+
+.intro-content {
+    max-width: 600px;
+    margin-bottom: 2rem;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.intro-content h1 {
+    font-size: 3rem;
+    margin: 0 0 1rem;
+}
+
+.intro-content p {
+    font-size: 1.5rem;
+    margin: 0 0 2rem;
+}
+
+.intro-content .btn {
+    padding: 1rem 2rem;
+    background-color: #FF8F4F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.intro-content .btn:hover {
+    background-color: #e07639;
+    transform: scale(1.1);
+}
+
+.intro-image img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.intro-image img:hover {
+    transform: scale(1.05);
+}
+
+.exemplo-oficinas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.exemplo-oficinas img {
+    max-width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.exemplo-oficinas img:hover {
+    transform: scale(1.1);
+}
+
+.ranking {
+    margin: 2rem 0;
+}
+
+.ranking table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.ranking th, .ranking td {
+    padding: 1rem;
+    border: 1px solid #fff;
+}
+
+.ranking th {
+    background-color: #4E2B4C;
+}
+
+.ranking td {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ranking tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Courses section */
+.courses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.course-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.course-img:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+footer h2 {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 1rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2em;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+footer .redes-sociais{
+    background-color: #3b5998;
+}
+
+footer .redes-sociais{
+    background-color: #1da1f2;
+}
+
+footer .redes-sociais{
+    background-color: #e4405f;
+}
+
+footer .redes-sociais:hover {
+    opacity: 0.8;
+}
+
+footer p, footer h2 {
+    color: #fff;
+}
